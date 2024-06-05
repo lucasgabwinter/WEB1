@@ -1,1 +1,1 @@
-console.group('Hello World');
+console.log('Hello Worldd');
