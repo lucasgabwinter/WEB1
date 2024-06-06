@@ -1,0 +1,16 @@
+body {
+  background-color: burlywood;
+}
+
+h1 {
+  font-size: 20px;
+  color: blueviolet;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+#colorList {
+  text-align: center;
+  color: red;
+}
