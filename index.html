@@ -6,55 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1 id="colorList">Hello World</h1>
-    <p id="greeting"></p>
-    <ul>
-      <li>Ana</li>
-      <li>Mark</li>
-      <li>Jose</li>
-    </ul>
-    <ol>
-      <li>Apple</li>
-      <li>Banana</li>
-      <li>Avocado</li>
-    </ol>
-    <dl>
-      <dt>Coffee</dt>
-      <dd>Drink</dd>
-    </dl>
-
-    <form action="submit">
-      <label for="name">User:</label>
-      <input type="text" id="name" name="name" />
-      <br />
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" />
-      <input type="button" value="OK" />
-    </form>
-    <br />
-
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Gender</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>John</th>
-          <th>30</th>
-          <th>Male</th>
-        </tr>
-        <tr>
-          <th>Jabe</th>
-          <th>25</th>
-          <th>Female</th>
-        </tr>
-      </tbody>
-    </table>
+  <body id="body">
+    <h1>Calculator</h1>
+    <input type="number" id="userNum1" placeholder="Enter the first number" />
+    <input type="number" id="userNum2" placeholder="Enter the second number" />
+    <select id="operator">
+      <option value="+">Addition +</option>
+      <option value="-">Subtraction -</option>
+      <option value="*">Multiplication *</option>
+      <option value="/">Division /</option>
+    </select>
+    <button id="calculate">Calculate</button>
+    <div id="result"></div>
     <script src="main.js"></script>
   </body>
 </html>
