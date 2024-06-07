@@ -50,32 +50,52 @@
 //   checkAge();
 // });
 
+// let userNum1 = document.getElementById('userNum1');
+// let userNum2 = document.getElementById('userNum2');
+// let calculate = document.getElementById('calculate');
+// let operator = document.getElementById('operator');
+// let result = document.getElementById('result');
+
+// calculate.addEventListener('click', () => {
+//   console.log(operator);
+//   let num1 = Number(userNum1.value);
+//   let num2 = Number(userNum2.value);
+//   console.log(num1);
+//   console.log(typeof num1);
+//   switch (operator.value) {
+//     case '+':
+//       result.innerHTML = num1 + num2;
+//       break;
+//     case '-':
+//       result.innerHTML = num1 - num2;
+//       break;
+//     case '*':
+//       result.innerHTML = num1 * num2;
+//       break;
+//     case '/':
+//       result.innerHTML = num1 / num2;
+//       break;
+//     default:
+//       break;
+//   }
+// });
 let userNum1 = document.getElementById('userNum1');
 let userNum2 = document.getElementById('userNum2');
 let calculate = document.getElementById('calculate');
-let operator = document.getElementById('operator');
 let result = document.getElementById('result');
 
+let stringResult = '';
+
 calculate.addEventListener('click', () => {
-  console.log(operator);
-  let num1 = Number(userNum1.value);
-  let num2 = Number(userNum2.value);
-  console.log(num1);
-  console.log(typeof num1);
-  switch (operator.value) {
-    case '+':
-      result.innerHTML = num1 + num2;
-      break;
-    case '-':
-      result.innerHTML = num1 - num2;
-      break;
-    case '*':
-      result.innerHTML = num1 * num2;
-      break;
-    case '/':
-      result.innerHTML = num1 / num2;
-      break;
-    default:
-      break;
+  num1 = Number(userNum1.value);
+  num2 = Number(userNum2.value);
+  let i = num1;
+  while (i <= num2) {
+    if (i % 2 == 0) {
+      stringResult += i;
+      stringResult += ' ';
+    }
+    i++;
   }
+  result.innerHTML = stringResult;
 });
